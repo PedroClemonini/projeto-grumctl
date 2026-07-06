@@ -1,0 +1,4 @@
+../Core/Src/weight_module.c:21:6:update_bright_display_oled	3
+../Core/Src/weight_module.c:53:6:update_led_pwm	4
+../Core/Src/weight_module.c:88:6:update_display_balanca	1
+../Core/Src/weight_module.c:112:7:measure_weight	2

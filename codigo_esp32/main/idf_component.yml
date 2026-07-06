@@ -1,0 +1,5 @@
+dependencies:
+  nopnop2002/sqlite3:
+    path: components/esp32-idf-sqlite3/
+    git: https://github.com/nopnop2002/esp32-idf-sqlite3.git
+  joltwallet/littlefs: "*"

@@ -1,0 +1,2 @@
+source /Users/pedroclemonini/esp/hx711/build/bootloader/gdbinit/symbols
+source /Users/pedroclemonini/esp/hx711/build/bootloader/gdbinit/connect

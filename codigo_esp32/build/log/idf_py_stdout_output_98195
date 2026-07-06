@@ -1,0 +1,86 @@
+[1/5] cd /Users/pedroclemonini/esp/hx711/build/esp-idf/esptool_py && /Users/pedroclemonini/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/pedroclemonini/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/pedroclemonini/esp/hx711/build/partition_table/partition-table.bin /Users/pedroclemonini/esp/hx711/build/hx711.bin
+hx711.bin binary size 0x11a650 bytes. Smallest app partition is 0x180000 bytes. 0x659b0 bytes (26%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/pedroclemonini/esp/hx711/build/bootloader/esp-idf/esptool_py && /Users/pedroclemonini/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/pedroclemonini/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/pedroclemonini/esp/hx711/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/pedroclemonini/esp/esp-idf/components/esptool_py && /opt/local/bin/cmake -D IDF_PATH=/Users/pedroclemonini/esp/esp-idf -D "SERIAL_TOOL=/Users/pedroclemonini/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/pedroclemonini/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/pedroclemonini/esp/hx711/build -P /Users/pedroclemonini/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-56B90137931 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 hx711.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port /dev/cu.usbserial-56B90137931
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 48:e7:29:9b:83:60
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0012afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16384...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16384 compressed) at 0x00001000 in 0.8 seconds (effective 246.9 kbit/s)...
+Hash of data verified.
+Compressed 1156688 bytes to 747747...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001be88... (4 %)
+Writing at 0x0002762b... (6 %)
+Writing at 0x0002efb0... (8 %)
+Writing at 0x0003b544... (10 %)
+Writing at 0x000413d5... (13 %)
+Writing at 0x00046cd8... (15 %)
+Writing at 0x0004c9f7... (17 %)
+Writing at 0x00052490... (19 %)
+Writing at 0x00057ab0... (21 %)
+Writing at 0x0005d1be... (23 %)
+Writing at 0x000623bb... (26 %)
+Writing at 0x00067754... (28 %)
+Writing at 0x0006cb9f... (30 %)
+Writing at 0x000722e2... (32 %)
+Writing at 0x00077906... (34 %)
+Writing at 0x0007ce1d... (36 %)
+Writing at 0x0008282e... (39 %)
+Writing at 0x00087f16... (41 %)
+Writing at 0x0008d97d... (43 %)
+Writing at 0x00093a73... (45 %)
+Writing at 0x00099c62... (47 %)
+Writing at 0x0009fa3c... (50 %)
+Writing at 0x000a5dfd... (52 %)
+Writing at 0x000aaf00... (54 %)
+Writing at 0x000b0289... (56 %)
+Writing at 0x000b59ba... (58 %)
+Writing at 0x000bb178... (60 %)
+Writing at 0x000c0529... (63 %)
+Writing at 0x000c5b55... (65 %)
+Writing at 0x000cba8e... (67 %)
+Writing at 0x000d113f... (69 %)
+Writing at 0x000d6e18... (71 %)
+Writing at 0x000dc9e1... (73 %)
+Writing at 0x000e244a... (76 %)
+Writing at 0x000e7efc... (78 %)
+Writing at 0x000edc6a... (80 %)
+Writing at 0x000f3c42... (82 %)
+Writing at 0x000f9664... (84 %)
+Writing at 0x000fed7d... (86 %)
+Writing at 0x00108940... (89 %)
+Writing at 0x0010ff14... (91 %)
+Writing at 0x00115b6e... (93 %)
+Writing at 0x0011b65a... (95 %)
+Writing at 0x00121a10... (97 %)
+Writing at 0x00126ccf... (100 %)
+Wrote 1156688 bytes (747747 compressed) at 0x00010000 in 18.8 seconds (effective 493.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.1 seconds (effective 339.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

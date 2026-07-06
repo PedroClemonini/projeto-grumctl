@@ -1,0 +1,160 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  4 2026 20:56:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (80) boot:  3 storage          Unknown data     01 82 00190000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26234h (156212) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0003625c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=00036280 vaddr=3ffb0000 size=05110h ( 20752) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=0003b398 vaddr=40080000 size=04c80h ( 19584) load[0m
+[0;32mI (170) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=d66a0h (878240) map[0m
+[0;32mI (470) esp_image: segment 5: paddr=001166c8 vaddr=40084c80 size=13db8h ( 81336) load[0m
+[0;32mI (514) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (514) boot: Disabling RNG early entropy source...[0m
+[0;32mI (524) cpu_start: Multicore app[0m
+[0;32mI (533) cpu_start: Pro cpu start user code[0m
+[0;32mI (533) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (534) app_init: Application information:[0m
+[0;32mI (534) app_init: Project name:     hx711[0m
+[0;32mI (537) app_init: App version:      1[0m
+[0;32mI (541) app_init: Compile time:     Jul  4 2026 20:55:55[0m
+[0;32mI (546) app_init: ELF file SHA256:  7b9e803c1...[0m
+[0;32mI (550) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (554) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (558) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (562) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (566) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (572) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (577) heap_init: At 3FFB9698 len 00026968 (154 KiB): DRAM[0m
+[0;32mI (583) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (588) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 40098A38 len 000075C8 (29 KiB): IRAM[0m
+[0;32mI (600) spi_flash: detected chip: generic[0m
+[0;32mI (602) spi_flash: flash io: dio[0m
+[0;32mI (607) main_task: Started on CPU0[0m
+[0;32mI (617) main_task: Calling app_main()[0m
+[0;32mI (657) db: LittleFS montado. total=1048576 used=24576[0m
+[0;32mI (1137) db: Banco de dados pronto em /spiffs/pesagens.db[0m
+[0;32mI (1147) wifi:wifi driver task: 3ffc0fbc, prio:23, stack:6656, core=0[0m
+[0;32mI (1157) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1157) wifi:wifi certification version: v7.0[0m
+[0;32mI (1157) wifi:config NVS flash: enabled[0m
+[0;32mI (1157) wifi:config nano formatting: disabled[0m
+[0;32mI (1167) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1167) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1177) wifi:Init management short buffer num: 32[0m
+[0;32mI (1177) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1187) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1187) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1187) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1197) wifi_init: rx ba win: 6[0m
+[0;32mI (1197) wifi_init: accept mbox: 6[0m
+[0;32mI (1197) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1207) wifi_init: udp mbox: 6[0m
+[0;32mI (1207) wifi_init: tcp mbox: 6[0m
+[0;32mI (1207) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1217) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1217) wifi_init: tcp mss: 1440[0m
+[0;32mI (1217) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1227) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1237) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1307) wifi:mode : softAP (48:e7:29:9b:83:61)[0m
+[0;32mI (1317) wifi:Total power save buffer number: 16[0m
+[0;32mI (1317) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1317) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1317) app: AP iniciado. SSID:Balanca_ESP32 senha:12345678 canal:1[0m
+[0;32mI (1327) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1337) app: Servidor web iniciado em http://192.168.4.1/[0m
+[0;32mI (1337) app: I2C slave pronto no endereco 0x08[0m
+[0;32mI (1347) main_task: Returned from app_main()[0m
+[0;32mI (45827) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (45827) wifi:station: c6:bd:59:7d:5d:ae join, AID=1, bgn, 20[0m
+[0;32mI (45867) wifi:<ba-add>idx:2 (ifx:1, c6:bd:59:7d:5d:ae), tid:0, ssn:2, winSize:64[0m
+[0;32mI (45987) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (68227) wifi:starting SA query procedure with STA(c6:bd:59:7d:5d:ae)[0m
+[0;32mI (68227) wifi:Send SA Query req with transaction id ecef[0m
+[0;32mI (68427) wifi:Send SA Query req with transaction id ecf0[0m
+[0;32mI (68627) wifi:Send SA Query req with transaction id ecf1[0m
+[0;32mI (68827) wifi:Send SA Query req with transaction id ecf2[0m
+[0;32mI (69027) wifi:Send SA Query req with transaction id ecf3[0m
+[0;32mI (69227) wifi:Send SA Query req with transaction id ecf4[0m
+[0;32mI (69247) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (69257) wifi:station: c6:bd:59:7d:5d:ae leave, AID = 1, reason = 209, bss_flags is 691315, bss:0x3ffbaa4c[0m
+[0;32mI (69257) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (69267) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (69637) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (69637) wifi:station: c6:bd:59:7d:5d:ae join, AID=1, bgn, 20[0m
+[0;32mI (69777) wifi:<ba-add>idx:2 (ifx:1, c6:bd:59:7d:5d:ae), tid:0, ssn:2, winSize:64[0m
+[0;32mI (69837) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (70327) wifi:<ba-add>idx:3 (ifx:1, c6:bd:59:7d:5d:ae), tid:1, ssn:0, winSize:64[0m
+[0;32mI (70657) wifi:<ba-add>idx:4 (ifx:1, c6:bd:59:7d:5d:ae), tid:5, ssn:0, winSize:64[0m
+[0;32mI (104697) app: status=iniciado lim=500.0 peso=2.1[0m
+[0;32mI (105707) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (106717) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (107737) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (108747) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (109767) app: status=andamento lim=500.0 peso=2.0[0m
+[0;32mI (110777) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (111797) app: status=andamento lim=500.0 peso=2.1[0m
+[0;32mI (112807) app: status=andamento lim=500.0 peso=2.0[0m
+[0;32mI (113817) app: status=andamento lim=500.0 peso=229.6[0m
+[0;32mI (114837) app: status=andamento lim=500.0 peso=432.2[0m
+[0;32mI (115847) app: status=andamento lim=500.0 peso=131.6[0m
+[0;32mI (116867) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (117877) app: status=andamento lim=500.0 peso=2.1[0m
+[0;32mI (118897) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (119907) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (120917) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (121937) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (122947) app: status=andamento lim=500.0 peso=2.1[0m
+[0;32mI (123967) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (124977) app: status=andamento lim=500.0 peso=1.8[0m
+[0;32mI (125987) app: status=andamento lim=500.0 peso=601.1[0m
+[0;32mI (127007) app: status=andamento lim=500.0 peso=715.2[0m
+[0;32mI (128017) app: status=andamento lim=500.0 peso=300.8[0m
+[0;32mI (129037) app: status=andamento lim=500.0 peso=2.6[0m
+[0;32mI (130047) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (131067) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (132077) app: status=andamento lim=500.0 peso=2.5[0m
+[0;32mI (133087) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (134107) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (135117) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (136137) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (137147) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (138167) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (139177) app: status=andamento lim=500.0 peso=2.2[0m
+[0;32mI (140187) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (141207) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (142217) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (143237) app: status=andamento lim=500.0 peso=2.3[0m
+[0;32mI (144247) app: status=andamento lim=500.0 peso=2.5[0m
+[0;32mI (145267) app: status=andamento lim=500.0 peso=2.5[0m
+[0;32mI (146277) app: status=andamento lim=500.0 peso=2.5[0m
+[0;32mI (147297) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (148307) app: status=andamento lim=500.0 peso=2.6[0m
+[0;32mI (149317) app: status=andamento lim=500.0 peso=2.5[0m
+[0;32mI (150337) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (151347) app: status=andamento lim=500.0 peso=2.4[0m
+[0;32mI (152367) app: status=andamento lim=500.0 peso=2.4[0m

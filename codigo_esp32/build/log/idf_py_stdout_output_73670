@@ -1,0 +1,210 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  4 2026 20:56:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (80) boot:  3 storage          Unknown data     01 82 00190000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=263f4h (156660) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0003641c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=00036440 vaddr=3ffb0000 size=05110h ( 20752) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=0003b558 vaddr=40080000 size=04ac0h ( 19136) load[0m
+[0;32mI (170) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=d78cch (882892) map[0m
+[0;32mI (471) esp_image: segment 5: paddr=001178f4 vaddr=40084ac0 size=13d0ch ( 81164) load[0m
+[0;32mI (515) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (515) boot: Disabling RNG early entropy source...[0m
+[0;32mI (526) cpu_start: Multicore app[0m
+[0;32mI (535) cpu_start: Pro cpu start user code[0m
+[0;32mI (535) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (535) app_init: Application information:[0m
+[0;32mI (535) app_init: Project name:     hx711[0m
+[0;32mI (539) app_init: App version:      1[0m
+[0;32mI (542) app_init: Compile time:     Jul  4 2026 20:55:55[0m
+[0;32mI (547) app_init: ELF file SHA256:  e41c03382...[0m
+[0;32mI (551) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (556) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (560) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (564) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (568) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (579) heap_init: At 3FFB9690 len 00026970 (154 KiB): DRAM[0m
+[0;32mI (584) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (589) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (595) heap_init: At 400987CC len 00007834 (30 KiB): IRAM[0m
+[0;32mI (602) spi_flash: detected chip: generic[0m
+[0;32mI (604) spi_flash: flash io: dio[0m
+[0;32mI (608) main_task: Started on CPU0[0m
+[0;32mI (618) main_task: Calling app_main()[0m
+[0;32mI (658) db: LittleFS montado. total=1048576 used=24576[0m
+[0;32mI (708) db: Banco de dados pronto em /spiffs/pesagens.db[0m
+[0;32mI (718) wifi:wifi driver task: 3ffc54fc, prio:23, stack:6656, core=0[0m
+[0;32mI (728) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (728) wifi:wifi certification version: v7.0[0m
+[0;32mI (728) wifi:config NVS flash: enabled[0m
+[0;32mI (728) wifi:config nano formatting: disabled[0m
+[0;32mI (738) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (738) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (748) wifi:Init management short buffer num: 32[0m
+[0;32mI (748) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (758) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (758) wifi:Init static rx buffer num: 10[0m
+[0;32mI (758) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (768) wifi_init: rx ba win: 6[0m
+[0;32mI (768) wifi_init: accept mbox: 6[0m
+[0;32mI (768) wifi_init: tcpip mbox: 32[0m
+[0;32mI (778) wifi_init: udp mbox: 6[0m
+[0;32mI (778) wifi_init: tcp mbox: 6[0m
+[0;32mI (778) wifi_init: tcp tx win: 5760[0m
+[0;32mI (788) wifi_init: tcp rx win: 5760[0m
+[0;32mI (788) wifi_init: tcp mss: 1440[0m
+[0;32mI (788) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (788) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (798) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (878) wifi:mode : softAP (48:e7:29:9b:83:61)[0m
+[0;32mI (888) wifi:Total power save buffer number: 16[0m
+[0;32mI (888) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (888) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (888) app: AP iniciado. SSID:Balanca_ESP32 senha:12345678 canal:1[0m
+[0;32mI (888) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (908) app: Servidor web iniciado em http://192.168.4.1/[0m
+[0;32mI (908) uart: queue free spaces: 20[0m
+[0;32mI (908) main_task: Returned from app_main()[0m
+[0;32mI (149338) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (149338) wifi:station: c6:bd:59:7d:5d:ae join, AID=1, bgn, 20[0m
+[0;32mI (149548) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (150318) wifi:<ba-add>idx:2 (ifx:1, c6:bd:59:7d:5d:ae), tid:0, ssn:2, winSize:64[0m
+[0;32mI (152418) wifi:<ba-add>idx:3 (ifx:1, c6:bd:59:7d:5d:ae), tid:1, ssn:0, winSize:64[0m
+[0;32mI (41868) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41868) wifi:station: c6:bd:59:7d:5d:ae join, AID=1, bgn, 20[0m
+[0;32mI (41898) wifi:<ba-add>idx:2 (ifx:1, c6:bd:59:7d:5d:ae), tid:0, ssn:213, winSize:64[0m
+[0;32mI (43908) wifi:<ba-add>idx:3 (ifx:1, c6:bd:59:7d:5d:ae), tid:1, ssn:5, winSize:64[0m
+[0;32mI (1277008) wifi:starting SA query procedure with STA(c6:bd:59:7d:5d:ae)[0m
+[0;32mI (1277008) wifi:Send SA Query req with transaction id e575[0m
+[0;32mI (1277208) wifi:Send SA Query req with transaction id e576[0m
+[0;32mI (1277408) wifi:Send SA Query req with transaction id e577[0m
+[0;32mI (1277608) wifi:Send SA Query req with transaction id e578[0m
+[0;32mI (1277808) wifi:Send SA Query req with transaction id e579[0m
+[0;32mI (1278008) wifi:Send SA Query req with transaction id e57a[0m
+[0;32mI (1278038) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (1278038) wifi:station: c6:bd:59:7d:5d:ae leave, AID = 1, reason = 209, bss_flags is 691315, bss:0x3ffbaa44[0m
+[0;32mI (1278038) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1278048) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (1278048) wifi:<ba-del>idx:3, tid:1[0m
+[0;32mI (1278418) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1278418) wifi:station: c6:bd:59:7d:5d:ae join, AID=1, bgn, 20[0m
+[0;32mI (1278578) wifi:<ba-add>idx:2 (ifx:1, c6:bd:59:7d:5d:ae), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1278578) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[1;31mE (1278578) wifi:CCMP replay detected: A1=48:e7:29:9b:83:61 A2=c6:bd:59:7d:5d:ae PN=4, RSC=4 seq=63696[0m
+[0;32mI (1278588) wifi:<ba-add>idx:3 (ifx:1, c6:bd:59:7d:5d:ae), tid:1, ssn:0, winSize:64[0m
+[0;32mI (1284638) wifi:<ba-add>idx:4 (ifx:1, c6:bd:59:7d:5d:ae), tid:5, ssn:0, winSize:64[0m
+[0;32mI (1411768) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (1675648) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (2883578) wifi:starting SA query procedure with STA(c6:bd:59:7d:5d:ae)[0m
+[0;32mI (2883578) wifi:Send SA Query req with transaction id 5ac3[0m
+[0;32mI (2883778) wifi:Send SA Query req with transaction id 5ac4[0m
+[0;32mI (2883978) wifi:Send SA Query req with transaction id 5ac5[0m
+[0;32mI (2884178) wifi:Send SA Query req with transaction id 5ac6[0m
+[0;32mI (2884378) wifi:Send SA Query req with transaction id 5ac7[0m
+[0;32mI (2884578) wifi:Send SA Query req with transaction id 5ac8[0m
+[0;32mI (2884608) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (2884608) wifi:station: c6:bd:59:7d:5d:ae leave, AID = 1, reason = 209, bss_flags is 691315, bss:0x3ffbaa44[0m
+[0;32mI (2884608) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2884618) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (2884618) wifi:<ba-del>idx:3, tid:1[0m
+[0;32mI (2884628) wifi:<ba-del>idx:4, tid:5[0m
+[0;32mI (2884988) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2884998) wifi:station: c6:bd:59:7d:5d:ae join, AID=1, bgn, 20[0m
+[0;32mI (2885128) wifi:<ba-add>idx:2 (ifx:1, c6:bd:59:7d:5d:ae), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2885128) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (2984978) wifi:<ba-add>idx:3 (ifx:1, c6:bd:59:7d:5d:ae), tid:1, ssn:0, winSize:64[0m
+[0;32mI (2985138) wifi:<ba-add>idx:4 (ifx:1, c6:bd:59:7d:5d:ae), tid:5, ssn:0, winSize:64[0m
+[0;33mW (3038278) app: JSON invalido recebido: [0m
+[0;32mI (3039298) app: status=andamento lim=500.0 peso=10197.9[0m
+[0;32mI (3040308) app: status=andamento lim=500.0 peso=10197.8[0m
+[0;32mI (3041328) app: status=andamento lim=500.0 peso=10198.0[0m
+[0;32mI (3042348) app: status=andamento lim=500.0 peso=10197.8[0m
+[0;32mI (3043358) app: status=andamento lim=500.0 peso=10197.7[0m
+[0;32mI (3044378) app: status=andamento lim=500.0 peso=10197.8[0m
+[0;32mI (3045398) app: status=finalizado lim=500.0 peso=10198.0[0m
+[0;32mI (3048438) app: status=iniciado lim=500.0 peso=10197.8[0m
+[0;32mI (3049458) app: status=andamento lim=500.0 peso=10197.8[0m
+[0;32mI (3050478) app: status=finalizado lim=500.0 peso=10197.6[0m
+[0;32mI (3098348) app: status=iniciado lim=500.0 peso=0.2[0m
+[0;32mI (3099358) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3100378) app: status=andamento lim=500.0 peso=0.0[0m
+[0;32mI (3101388) app: status=andamento lim=500.0 peso=0.0[0m
+[0;32mI (3102408) app: status=andamento lim=500.0 peso=15.3[0m
+[0;32mI (3103428) app: status=andamento lim=500.0 peso=562.2[0m
+[0;32mI (3104448) app: status=andamento lim=500.0 peso=625.2[0m
+[0;32mI (3105458) app: status=andamento lim=500.0 peso=0.0[0m
+[0;32mI (3106478) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3107488) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3108508) app: status=andamento lim=500.0 peso=61.9[0m
+[0;32mI (3109528) app: status=andamento lim=500.0 peso=419.0[0m
+[0;32mI (3110538) app: status=andamento lim=500.0 peso=491.3[0m
+[0;32mI (3111558) app: status=andamento lim=500.0 peso=301.8[0m
+[0;32mI (3112568) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3113588) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3114608) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3115618) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3116638) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3117648) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3118668) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3119688) app: status=andamento lim=500.0 peso=0.6[0m
+[0;32mI (3120708) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3121718) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3122738) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3123748) app: status=andamento lim=500.0 peso=0.1[0m
+[0;32mI (3124768) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3125788) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3126798) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3127818) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3128838) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3129848) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3130868) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3131888) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3132898) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3133918) app: status=andamento lim=500.0 peso=0.1[0m
+[0;32mI (3134938) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3135948) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3136968) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3137978) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3138998) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3140018) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3141028) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3142048) app: status=andamento lim=500.0 peso=0.3[0m
+[0;32mI (3143068) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3144078) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3145098) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3146108) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3147128) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3148148) app: status=andamento lim=500.0 peso=0.2[0m
+[0;32mI (3149158) app: status=andamento lim=500.0 peso=0.5[0m
+[0;32mI (3150178) app: status=andamento lim=500.0 peso=129.8[0m
+[0;32mI (3151198) app: status=andamento lim=500.0 peso=685.6[0m
+[0;32mI (3152218) app: status=andamento lim=500.0 peso=730.4[0m
+[0;32mI (3153228) app: status=andamento lim=500.0 peso=725.9[0m
+[0;32mI (3154248) app: status=andamento lim=500.0 peso=460.2[0m
+[0;32mI (3155258) app: status=andamento lim=500.0 peso=0.4[0m
+[0;32mI (3156278) app: status=andamento lim=500.0 peso=0.1[0m
+[0;32mI (3157298) app: status=andamento lim=500.0 peso=0.3[0m

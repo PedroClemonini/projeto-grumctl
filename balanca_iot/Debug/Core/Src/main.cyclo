@@ -1,0 +1,12 @@
+../Core/Src/main.c:88:6:send_json_to_esp32	1
+../Core/Src/main.c:102:5:main	13
+../Core/Src/main.c:231:6:SystemClock_Config	4
+../Core/Src/main.c:278:13:MX_ADC1_Init	3
+../Core/Src/main.c:325:13:MX_I2C1_Init	2
+../Core/Src/main.c:359:13:MX_TIM1_Init	4
+../Core/Src/main.c:405:13:MX_TIM2_Init	6
+../Core/Src/main.c:464:13:MX_TIM3_Init	3
+../Core/Src/main.c:513:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:546:13:MX_GPIO_Init	1
+../Core/Src/main.c:590:6:HAL_GPIO_EXTI_Callback	3
+../Core/Src/main.c:606:6:Error_Handler	1
